@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
-    <title>Demo Video</title>
-  </head>
-  <body>
-    <h2>Demo Video</h2>
-    <p>The demonstration video will be uploaded soon. Please check back later.</p>
-  </body>
+    <title>Demonstration Video</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f7f7f7;
+            padding: 40px;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            max-width: 900px;
+            margin: auto;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+        }
+        .video-box {
+            margin-top: 30px;
+        }
+        iframe {
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Autonomous Driving Demonstration Video</h1>
+    <p>The demonstration video will be uploaded soon.<br>
+       Please revisit this page after the official presentation.</p>
+
+    <div class="video-box">
+        <!-- YouTube 영상이 준비되면 VIDEO_ID 부분만 교체하면 됨 -->
+        <iframe id="ytplayer" width="800" height="450"
+                src="https://www.youtube.com/watch?v=qALbSMyJGNw"
+                allowfullscreen>
+        </iframe>
+    </div>
+</div>
+
+</body>
 </html>
